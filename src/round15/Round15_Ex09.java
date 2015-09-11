@@ -54,12 +54,12 @@ class MyException extends Exception
 	
 	public void printStackTrace()
 	{
-		System.out.println(":: Error 발생 ::");
-		System.out.println("에러사유 = "+message);
-		System.out.println("관련 클래스 = "+cause);
-		System.out.println("메시지 = "+ cause.getMessage());
-		System.out.println(":: Error 출력 끝 ::");
-		
+		System.out.println();
+		System.out.println(">>>  Error 발생");
+		System.out.println(">>>  에러사유    = "+message);
+		System.out.println(">>>  관련 클래스 = "+cause);
+		System.out.println(">>>  메시지      = "+cause.getMessage());
+		System.out.println();
 		//super.printStackTrace(System.out);
 	}
 	
